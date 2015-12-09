@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js – The HTML Presentation Framework</title>
+		<title>Web Accessibility Part 1, Semantic HTML</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -41,339 +41,244 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
+					<h2>Web Accessibility</h2>
+					<h3>Part 1</h3>
+					<h1>Semantic HTML</h1>
 					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+						<small>by Greg Hemphill &#9733; <a href="http://twitter.com/hemphill">@hemphill</a></small>
 					</p>
 				</section>
 
 				<section>
-					<h2>Hello There</h2>
+					<h2>What is Semantic HTML?</h2>
 					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
-				</section>
-
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
+						Semantic HTML is the judicial application of HTML tags to identify individual pieces of content, and to express organization of information on a webpage.
 					</p>
 				</section>
 
 				<section>
-					<h2>Point of View</h2>
 					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
+						Rather than simply defining the presention or styling, semantic HTML provides context, meaning, and organizational structure to the content on a webpage.
 					</p>
 				</section>
 
 				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
-
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code class="hljs">&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-						<h2>... and GIFs!</h2>
-					</section>
-				</section>
-
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code class="hljs">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code class="hljs" data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-
-				<section>
-					<h2>Marvelous List</h2>
+					<h2>key Benefits</h2>
 					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
+						<li><strong>Cleaner Code:</strong><br> <small>easier to edit &amp; maintain. Saves time, effort, and money!</small></li>
+						<li><strong>SEO:</strong><br> <small>search engines can crawl the webpage and make sense of it.</small></li>
+						<li><strong>Accessibility:</strong><br> <small>assistive technologies (e.g. screen readers) can more easily navigate and present the content.</small></li>
 					</ul>
 				</section>
 
 				<section>
-					<h2>Fantastic Ordered List</h2>
+					<h3>WCAG 2.0</h3>
+					<h1>Guideline 1.3</h1>
+					<p>&ldquo;Create content that can be presented in different ways (for example simpler layout) without losing information or structure.&rdquo;</p>
+				</section>
+
+				<section>
+					<h3>ADA &amp; WCAG 2.0</h3>
+					<p>The DOJ has been working to incorporate the WCAG 2.0 guidelines into Title III of the ADA.</p>
+				</section>
+
+				<section>
+					<h3>DOJ &amp; Lawsuits</h3>
+					<p>Regardless of the status in the ADA, the DOJ has successfully prosecuted many companies for not complying to WCAG 2.0.</p>
+				</section>
+
+				<section>
+					<h3>“explosion” of web accessibility lawsuits</h3>
+					<p>A large number of civil lawsuits have been made since 2013, and more are underway now.</p>
+				</section>
+
+				<section>
+					<p>
+						<em>“Open war is upon you whether you would risk it or not.”</em>
+						<br><small>— “Aragorn” in the novel <em>The Two Towers</em> by J. R. R. Tolkien</small>
+					</p>
+				</section>
+
+				<section>
+					<h2 style="color: #ccc;">How do we achieve<br>WCAG 2.0 Guideline 1.3?</h2>
+					<h1 class="fragment">Semantic HTML!</h1>
+				</section>
+
+				<section>
+					<h1>plus...</h1>
+					<p class="fragment">Nearly every other guideline of the WCAG 2.0 is achieved or aided by semantic HTML.</p>
+					<p class="fragment">But, we are going to cover the WCAG 2.0 Guidelines in other part of this series.</p>
+				</section>
+
+				<section>
+					<h2>Characteristics of <br>Accessible HTML</h2>
+					<ul>
+						<li>semantic treatment of content</li>
+						<li>proper use of attributes and textual alternates</li>
+						<li>sensitivity to contrast, colors, and font sizes</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Well Crafted HTML is <br>Semantic HTML</h2>
+					<p>
+						HTML markup is meant to define the structure of the document and add context to the content.
+					</p>
+				</section>
+
+				<section>
+					<h2>Two Basic parts of <br>semantic HTML</h2>
 					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
+						<li>Content Markup</li>
+						<li>Document Structure</li>
 					</ol>
 				</section>
 
 				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							</tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
+					<h2>Content Markup</h2>
 					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
+						Using the appropriate HTML tag for the content. <br>Giving content context and meaning.
 					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
+					<p><small>
+						Is it a paragraph of text? Use a <code>&lt;p&gt;</code> tag. <br>
+						Is it a heading? Use a <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tag. <br>
+						Is it a list of items? Use <code>&lt;li&gt;</code> tags.
+					</small>
 					</p>
 				</section>
 
 				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
+					<h2>Document Structure</h2>
+					<p>
+						Organizing and providing structure to the document. <br>Aids in organization and navigation of content.
+					</p>
+					<p><small>
+						Is the section a page header? Use a <code>&lt;header&gt;</code> tag. <br>
+						Is the section the main content area? Use a <code>&lt;main&gt;</code> tag. <br>
+						Is the section a navigation bar? Use <code>&lt;nav&gt;</code> tags.
+					</small>
+					</p>
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
 				</section>
 
 				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+					<h2>Accessible HTML Tips</h2>
+					<p>These are some simple tips that will help accessibility.</p>
+					<ol>
+						<li>Use the <code>alt=""</code> attribute on images</li>
+						<li>Use <code>&lt;label&gt;</code> tags to title form elements</li>
+					</ol>
 				</section>
 
 				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
+					<h4 style="margin: 0; padding: 0;"><span style="color:#FF6347;">Bad</span> Non-Semantic Example</h4>
 
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
+					<pre><code class="html"style="height: 610px; max-height: 610px;">
+&lt;div&gt;
+  &lt;div&gt;Greg's Awesome Web Guide&lt;/div&gt;
+  &lt;div&gt;
+    &lt;span&gt;&lt;a href="/home"&gt;Home&lt;/a&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;a href="/contact"&gt;Contact&lt;/a&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;div&gt;Semantic HTML&lt;/div&gt;
+  &lt;div&gt;
+    Semantic HTML is the use of HTML markup to reinforce the semantics, or meaning, of the information in webpages and web applications rather than merely to define its presentation or look. Semantic HTML is processed by traditional web browsers as well as by many other user agents.
+    &lt;div&gt;
+      &lt;a href="https://en.wikipedia.org/wiki/Semantic_HTML"&gt;
+        Wikipedia on Semantic HTML
+      &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    Well crafted HTML leads easier to style, maintain, and more accessible web pages. HTML is meant to define the structure of the document and add context to the content.
+  &lt;/div&gt;
+  &lt;div&gt;Well Crafted HTML&lt;/div&gt;
+  &lt;div&gt;semantic treatment of content&lt;/div&gt;
+  &lt;div&gt;proper use of attributes and textual alternates&lt;/div&gt;
+  &lt;div&gt;ensitivity to contrast, colors, and font sizes&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;div&gt;
+    &lt;span&gt;&lt;a href="/home"&gt;Home&lt;/a&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;a href="/contact"&gt;Contact&lt;/a&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 					</code></pre>
 				</section>
 
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
+<section>
+	<h4 style="margin: 0; padding: 0;"><span style="color:#4EEE94;">Good</span> Semantic Example</h4>
+	<pre><code class="html" style="height: 610px; max-height: 610px;">
+&lt;header&gt;
+  &lt;h4&gt;Greg's Awesome Web Guide&lt;/h4&gt;
+  &lt;nav&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="/home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="/contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
+&lt;main&gt;
+  &lt;article&gt;
+    &lt;h1&gt;Semantic HTML&lt;/h1&gt;
+    &lt;blockquote&gt;
+      Semantic HTML is the use of HTML markup to reinforce the semantics, or meaning, of the information in webpages and web applications rather than merely to define its presentation or look. Semantic HTML is processed by traditional web browsers as well as by many other user agents.
+      &lt;cite&gt;
+        &lt;a href="https://en.wikipedia.org/wiki/Semantic_HTML"&gt;
+          Wikipedia on Semantic HTML
+        &lt;/a&gt;
+      &lt;/cite&gt;
+    &lt;/blockquote&gt;
+    &lt;p&gt;
+      Well crafted HTML leads easier to style, maintain, and more accessible web pages. HTML is meant to define the structure of the document and add context to the content.
+    &lt;/p&gt;
+    &lt;h2&gt;Well Crafted HTML&lt;/h2&gt;
+    &lt;ul&gt;
+      &lt;li&gt;semantic treatment of content&lt;/li&gt;
+      &lt;li&gt;proper use of attributes and textual alternates&lt;/li&gt;
+      &lt;li&gt;ensitivity to contrast, colors, and font sizes&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/article&gt;
+&lt;/main&gt;
+&lt;footer&gt;
+  &lt;nav&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="/home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="/contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/footer&gt;
+</code></pre>
+</section>
 
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
-				</section>
+<section>
+  <h4 style="margin-bottom: 0;"><span style="color:#FF6347;">Bad</span> Non-Semantic <span style="font-size: 0.5em;">vs.</span> <span style="color:#4EEE94;">Good</span> Semantic</h4>
+  <img src="assets/images/markup-examples.png" style="max-width: 905px;">
+</section>
 
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
-				</section>
+<section>
+	<h1>Fin.</h1>
+	<p>
+		<small>by Greg Hemphill &#9733; <a href="http://twitter.com/hemphill">@hemphill</a></small>
+	</p>
+	<p>
+		<small>
+		for <a href="http://www.devlunch.us">.dev_lunch /&gt;</a>
+		<br><br><a href="http://www.devlunch.us">www.devlunch.us</a>
+		<br><a href="https://twitter.com/dev_lunch">@dev_lunch</a>
+	</small>
+	</p>
+</section>
+
+
+
+
+
+
+
+
 
 			</div>
 
