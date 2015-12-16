@@ -1,5 +1,7 @@
+
+### Web Accessibility Part 1
 # Semantic HTML Presentation 
-## Web Accessibility Part 1
+
 
 Presentation given on December 3rd 2015 at [dev lunch](http://www.devlunch.us)
 
